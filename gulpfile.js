@@ -63,7 +63,7 @@ const images = () => {
     return gulp.src('source/img/**/*.{jpg,png,svg}')
         .pipe(imagemin([
             imagemin.optipng({optimizationlevel: 5}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.mozjpeg({quality: 80, progressive: true}),
             imagemin.svgo()
         ]))
         .pipe(gulp.dest('source/img'))
